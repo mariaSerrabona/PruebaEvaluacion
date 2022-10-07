@@ -5,9 +5,10 @@
 
 def listado(lista):
     for numero in lista:
-        while numero < 300:
-            if numero % 10 == 0 & numero < 200:
+            if numero % 10 == 0 and numero < 200:
                 print(numero)
+            if numero > 300:
+                break
 
 
 listado([18, 50, 210, 80, 145, 333, 70, 30])
