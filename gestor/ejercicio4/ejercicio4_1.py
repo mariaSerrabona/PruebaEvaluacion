@@ -15,3 +15,4 @@ lista = [(a + x * (b - a)/length)**3 for x in range(length)]
 print(lista)
 
 plt.plot(x,lista, 'o', color="red")
+plt.show()
