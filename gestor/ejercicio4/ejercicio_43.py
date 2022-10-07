@@ -10,6 +10,8 @@ import numpy as np
 import pandas as pd
 
 
-autos=pd.read_csv('/Users/mariaperez-serrabona/PruebaEvaluacion/gestor/ejercicio4/autos.csv', sep=';')
-autos.head()
+autos=pd.read_csv('/Users/mariaperez-serrabona/PruebaEvaluacion/gestor/ejercicio4/autos.csv')
+
+autos=autos.columns(['mpg', 'cylinders', 'displacement', 'horsepower', 'weight', 'acceleration', 'model year', 'origin', 'car name'])
+
 
