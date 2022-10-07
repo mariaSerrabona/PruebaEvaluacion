@@ -15,3 +15,8 @@ autos=pd.read_csv('/Users/mariaperez-serrabona/PruebaEvaluacion/gestor/ejercicio
 autos=autos.columns(['mpg', 'cylinders', 'displacement', 'horsepower', 'weight', 'acceleration', 'model year', 'origin', 'car name'])
 
 
+column_names=['mgp', 'cylinders', 'displacement', 'horsepower', 'weight', 'acceleration', 'model year', 'origin', ' car name']
+
+
+autos=pd.DataFrame(autos, columns=column_names)
+
