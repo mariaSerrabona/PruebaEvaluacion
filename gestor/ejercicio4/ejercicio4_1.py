@@ -6,16 +6,12 @@ def f(x, x0, y0, x1, y1):
     return (y1-y0)/(x1-x0)*(x-x0) + y0
 
 
-def main():
-    a = 1
-    b = 10
-    length = 100
-    test_list = [(a + x * (b - a)/length)**3 for x in range(length)]
-    print(test_list)
 
-    #x=np.linspace(a[0],b[0], num= 100)
+a = 1.0
+b = 10
+x = np.linspace(a,b, num= 100)
+length = 100
+lista = [(a + x * (b - a)/length)**3 for x in range(length)]
+print(lista)
 
-    plt.plot(a,test_list, 'o', color="red")
-
-if __name__ == '__main__':
-    main()
+plt.plot(x,lista, 'o', color="red")
