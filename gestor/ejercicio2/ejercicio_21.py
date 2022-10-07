@@ -3,16 +3,14 @@
 
 # Parar el programa si llega a un número mayor que 300
 
-class ejercicio21:
-
-    def listado(lista):
-        for numero in lista:
-            while numero < 300:
-                if numero % 10 == 0 & numero < 200:
-                    print(numero)
+def listado(lista):
+    for numero in lista:
+        while numero < 300:
+            if numero % 10 == 0 & numero < 200:
+                print(numero)
 
 
-#listado([18, 50, 210, 80, 145, 333, 70, 30])
+listado([18, 50, 210, 80, 145, 333, 70, 30])
 
 
 
