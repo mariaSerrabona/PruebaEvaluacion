@@ -16,3 +16,5 @@ print(lista)
 
 plt.plot(x,lista, 'o', color="red")
 plt.show()
+
+plt.plot((a[0], b[0]), (a[1], b[1]))
