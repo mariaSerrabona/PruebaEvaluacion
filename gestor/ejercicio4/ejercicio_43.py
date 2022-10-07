@@ -18,6 +18,3 @@ autos_prueba.head()
 
 column_names=['mgp', 'cylinders', 'displacement', 'horsepower', 'weight', 'acceleration', 'model year', 'origin', ' car name']
 
-
-autos_prueba=pd.DataFrame(autos_prueba, columns=column_names)
-
