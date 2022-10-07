@@ -2,17 +2,17 @@
 # Imprimr el número en caso de que sea múltiplo de 10 y menor que 200
 
 # Parar el programa si llega a un número mayor que 300
-def listado(lista):
-    for numero in lista:
-        while numero < 300:
-            if numero % 10 == 0 & numero < 200:
-                print(numero)
+
+class ejercicio21:
+
+    def listado(lista):
+        for numero in lista:
+            while numero < 300:
+                if numero % 10 == 0 & numero < 200:
+                    print(numero)
 
 
-
-if __name__ == "__main__":
-    lista = [18, 50, 210, 80, 145, 333, 70, 30]
-    listado(lista)
+#listado([18, 50, 210, 80, 145, 333, 70, 30])
 
 
 
