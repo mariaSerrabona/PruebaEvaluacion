@@ -1,3 +1,4 @@
+from dataclasses import dataclass
 import pandas as pd
 import seaborn as sns 
 import matplotlib.pyplot as plt
@@ -22,3 +23,26 @@ print(data.dtypes)
 print(data.values.itemsize)
 
 #4.2.4
+
+#4.2.5
+print(data.describe())
+#4.2.6
+dic={}
+for i in data:
+    if i in dic:
+        dic[i]+=1
+    else:
+        dic[i]=1
+print(dic)
+#4.2.7
+for i in dic:
+    if dic[i]==1:
+        print (i)
+print()
+#4.2.8
+
+print(data.sort_values(ascending=False).reset_index(drop=True))
+#4.2.9
+dataej_42 = pd.DataFrame(data)
+dataej_42.columns=['Ej_42']
+print(dataej_42)
