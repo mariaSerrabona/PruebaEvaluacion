@@ -4,7 +4,7 @@
 
 #La salida esperada: 19
 
-clas ejercicio22:
+class ejercicio22:
     def contador_caracteres(lista_cadena_texto):
 
         count = 0
