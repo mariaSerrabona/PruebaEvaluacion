@@ -2,10 +2,13 @@
 import numpy as np
 import random
 
-array = []
+lista = []
 for i in range(0,100):
     if i % 9 == 0:
-        array.append(i)
+        lista.append(i)
+n=4
+sep=[lista[i:i + n] for i in range(0, len(lista), n)]
+array = np.array(sep)
 print(array)
 
 # 3.2.2 Filtra todos los valores del vector creado en el paso anterior de la siguiente manera:
@@ -13,7 +16,7 @@ print(array)
 
 # En el caso contratio se sustituyen con el valor -1
 
-for i in array:
+for i in lista:
     if i > 0 and i % 5 == 0:
         print(i)
     else:
