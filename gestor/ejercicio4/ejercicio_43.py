@@ -9,5 +9,9 @@
 import numpy as np
 import pandas as pd
 
+autos=pd.read_csv('autos.csv', sep='\s+', names=['MPG', 'Cylinders', 'Displacement', 'Horse power',
+           'Weight', 'Acceleration', 'Model Year', 'Origin', 'Car Name'])
+
+
 
 
