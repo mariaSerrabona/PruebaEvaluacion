@@ -1,11 +1,10 @@
 import os
 
 def iniciar():
-    compr=True
-    while compr:
+    while True:
         os.system('clear') # cls en Windows
         print("========================")
-        print(" BIENVENIDO AL Examen ") 
+        print(" BIENVENIDO AL Examen ")
         print("========================")
         print("[1] Ejercicio 1 ")
         print("[2] Ejercicio 1 ")
@@ -26,10 +25,6 @@ def iniciar():
             pass
         elif opcion == '6':
             print("Saliendo...\n")
-            compr=False
+            break
 
         input("\nPresiona ENTER para continuar...")
-iniciar()
-
-
-
