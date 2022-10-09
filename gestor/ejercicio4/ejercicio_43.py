@@ -11,7 +11,7 @@ import pandas as pd
 
 
 
-autos_prueba=pd.read_csv('/Users/mariaperez-serrabona/PruebaEvaluacion/gestor/ejercicio4/autos_prueba_test.csv', sep=';')
+autos_prueba=pd.read_csv('C:\Users\Carlota Martin-Anero\OneDrive\Documentos\UAX\Tercero de carrera GMAT\5º cuatri\Desarrollo orientado a objetos\PruebaEvaluacion\gestor\ejercicio4\autos_prueba_test.csv', sep=';')
 autos_prueba.head()
 
 
