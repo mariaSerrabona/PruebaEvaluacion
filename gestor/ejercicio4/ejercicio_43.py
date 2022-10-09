@@ -19,3 +19,6 @@ print(autos.info())
 autos_mayores_5000 = autos[autos['Weight'] > 5000]
 print(autos_mayores_5000['Car Name'])
 
+#4.3.2 ¿Cuál es el número de cilindros más frecuente en los coches que son del año 76?
+autos_76=autos[autos['Model Year']==76]
+print(autos_76['Cylinders'].mode())
