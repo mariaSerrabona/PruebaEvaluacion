@@ -34,3 +34,19 @@ print(autos_79['MPG'].mean())
 diferencia=abs(autos_70['MPG'].mean()-autos_79['MPG'].mean())
 
 print(diferencia)
+
+
+#4.3.4 Identifica las variables que contienen valores nulos (missing values) en caso que haya alguno.
+
+print(autos.columns[autos.isnull().any()])
+
+#4.3.5 Consigue un DataFrame de aquellos registros que tengan algún valor nulo (NaN), filtrando el DataFrame original.
+
+null_columns=autos.columns[autos.isnull().any()]
+autos[null_columns].isnull().sum()
+autos2 = pd.DataFrame(autos[autos.isnull().any(axis=1)])
+print(autos2)
+
+#4.3.6 Calcula la frecuencia del número de cilindros entre los registros del DataFrame anterior (la tabla con valores perdidos).
+
+print(autos2['Cylinders'].mode())
