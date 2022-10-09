@@ -1,6 +1,7 @@
 import os
 from ejercicio4 import ejercicio_43
 from ejercicio3 import ejercicio31
+from ejercicio2 import ejercicio22
 
 def iniciar():
     while True:
@@ -20,7 +21,14 @@ def iniciar():
         if opcion == '1':
             pass
         elif opcion == '2':
-            pass
+            print("========================")
+            print(" BIENVENIDO AL EJERCICIO 2 ")
+            print("========================")
+            print("[1] Ejercicio 2.1 ")
+            print("[2] Ejercicio 2.2 ")
+            opcion = input("> ")
+            if opcion=='2.2':
+                ejercicio22.get_infromation22()
         elif opcion == '3':
             print("========================")
             print(" BIENVENIDO AL EJERCICIO 3 ")

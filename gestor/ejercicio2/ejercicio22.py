@@ -15,4 +15,6 @@ def contador_caracteres(lista_cadena_texto):
     print(count)
 
 
-contador_caracteres(["PEP 8", "PEP 248", "PEP 257"])
+
+def get_infromation22():
+    contador_caracteres(["PEP 8", "PEP 248", "PEP 257"])
