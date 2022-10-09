@@ -11,10 +11,3 @@ import pandas as pd
 
 
 
-autos_prueba=pd.read_csv('/Users/mariaperez-serrabona/PruebaEvaluacion/gestor/ejercicio4/autos_prueba_test.csv', sep=';')
-autos_prueba.head()
-
-
-
-column_names=['mgp', 'cylinders', 'displacement', 'horsepower', 'weight', 'acceleration', 'model year', 'origin', ' car name']
-
