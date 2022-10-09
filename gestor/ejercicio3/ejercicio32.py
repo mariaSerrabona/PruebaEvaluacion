@@ -7,9 +7,6 @@ for i in range(0,100):
     if i % 9 == 0:
         array.append(i)
 print(array)
-# array_aleatorio=np.random.randint(1, 100, size=(3, 4))
-# array = array_aleatorio[array_aleatorio % 9 == 0]
-# print(array)
 
 # 3.2.2 Filtra todos los valores del vector creado en el paso anterior de la siguiente manera:
 # Si son valores positivos y múltiplos de 5 se conservan sin cambios
