@@ -4,15 +4,15 @@
 
 #La salida esperada: 19
 
-class ejercicio22:
-    def contador_caracteres(lista_cadena_texto):
 
-        count = 0
-        for i in lista_cadena_texto:
-            for j in i:
-                count = count + 1
+def contador_caracteres(lista_cadena_texto):
 
-        print(count)
+    count = 0
+    for i in lista_cadena_texto:
+        for j in i:
+            count = count + 1
+
+    print(count)
 
 
-#contador_caracteres(["PEP 8", "PEP 248", "PEP 257"])
+contador_caracteres(["PEP 8", "PEP 248", "PEP 257"])
