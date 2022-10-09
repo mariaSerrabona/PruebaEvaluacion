@@ -16,7 +16,7 @@ print(array)
 
 # En el caso contratio se sustituyen con el valor -1
 
-for i in array:
+for i in lista:
     if i > 0 and i % 5 == 0:
         print(i)
     else:
