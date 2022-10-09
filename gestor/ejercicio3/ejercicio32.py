@@ -20,3 +20,15 @@ for i in array:
         i = (-1)*i
         print(i)
 
+
+def get_information_32():
+    print('Un array de tamaño (3x4) de todos los números enteros entre 0 y 100 que sean múltiplos de 9:')
+    print(array)
+
+    print('Si son valores positivos y múltiplos de 5 se conservan sin cambios:')
+    print(i)
+
+    print('En el caso contratio se sustituyen con el valor -1:')
+    print(-i)
+
+

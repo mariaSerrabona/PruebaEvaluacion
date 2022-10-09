@@ -2,6 +2,8 @@ import os
 from ejercicio4 import ejercicio_43
 from ejercicio3 import ejercicio31
 from ejercicio2 import ejercicio22
+from ejercicio2 import ejercicio_21
+from ejercicio3 import ejercicio32
 
 def iniciar():
     while True:
@@ -27,8 +29,10 @@ def iniciar():
             print("[1] Ejercicio 2.1 ")
             print("[2] Ejercicio 2.2 ")
             opcion = input("> ")
+            if opcion=='2.1':
+                ejercicio_21.get_information21()
             if opcion=='2.2':
-                ejercicio22.get_infromation22()
+                ejercicio22.get_information22()
         elif opcion == '3':
             print("========================")
             print(" BIENVENIDO AL EJERCICIO 3 ")
@@ -36,8 +40,10 @@ def iniciar():
             print("[1] Ejercicio 3.1 ")
             print("[2] Ejercicio 3.2 ")
             opcion = input("> ")
-            if opcion=='3.2':
+            if opcion=='3.1':
                 ejercicio31.get_information_31()
+            if opcion=='3.2':
+                ejercicio32.get_information_32()
 
         elif opcion == '4':
             print("========================")
