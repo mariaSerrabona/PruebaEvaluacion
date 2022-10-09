@@ -8,7 +8,7 @@ class Lista:
 def seleccion(lista):
     longitud = (len(lista)-1)
     for i in range (longitud, 0, -2):
-        lista2 = lista[i])
+        lista2 = lista[i]
     return lista2
 
 def cambio_pos (lista):

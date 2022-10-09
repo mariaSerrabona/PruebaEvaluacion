@@ -12,8 +12,9 @@ print(array)
 # En el caso contratio se sustituyen con el valor -1
 
 for i in array:
-    if array[i] > 0 & array[i] % 5 == 0:
-        print(array[i])
+    if i > 0 and i % 5 == 0:
+        print(i)
     else:
-        array[i] = -1
+        i = (-1)*i
+        print(i)
 
