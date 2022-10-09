@@ -1,4 +1,7 @@
 import os
+from ejercicio4.ejercicio4_2 import *
+
+
 
 def iniciar():
     compr=True
@@ -17,7 +20,7 @@ def iniciar():
         os.system('clear') # cls en Windows
 
         if opcion == '1':
-            pass
+            print(get_estadisticas())
         elif opcion == '2':
             pass
         elif opcion == '3':
