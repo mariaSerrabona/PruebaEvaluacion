@@ -1,11 +1,13 @@
 import os
 from ejercicio4 import ejercicio_43
+from ejercicio4 import ejercicio4_2
 from ejercicio3 import ejercicio31
 from ejercicio2 import ejercicio22
 from ejercicio2 import ejercicio_21
 from ejercicio3 import ejercicio32
 from ejercicio4 import ejercicio4_1
 from ejercicio1 import ejercicio1_1
+from ejercicio1 import ejercicio1_2
 def iniciar():
     while True:
         os.system('clear') # cls en Windows
@@ -30,6 +32,12 @@ def iniciar():
             opcion = input("> ")
             if opcion=='1.1':
                 ejercicio1_1.get_information11()
+            elif opcion=='1.2':
+                ejercicio1_2.edad_alumno()
+                ejercicio1_2.Se_Encuentra()
+                ejercicio1_2.valor_asociado_y_longitud()
+                ejercicio1_2.tamaño_set_Edades()
+                
         elif opcion == '2':
             print("========================")
             print(" BIENVENIDO AL EJERCICIO 2 ")
@@ -67,6 +75,13 @@ def iniciar():
                 ejercicio_43.get_datos43()
             elif opcion == '4.1':
                 ejercicio4_1.ejercicio_41()
+            elif opcion == '4.2':
+                ejercicio4_2.obtener_datos_serie()
+                ejercicio4_2.get_estadisticas()
+                ejercicio4_2.sacar_frecuencia_y_val_unicos()
+                ejercicio4_2.reordenar_reset()
+                ejercicio4_2.get_df()
+
 
         elif opcion == '6':
             print("Saliendo...\n")

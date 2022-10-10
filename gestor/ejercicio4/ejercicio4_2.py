@@ -26,11 +26,13 @@ def obtener_datos_serie():
     #print(data.dtypes)
     #NUMERO DE BITS EN MEMORIA
     #print(data.values.itemsize)
+    print(data.values, data.dtypes,data.values.itemsize)
     return data.values, data.dtypes,data.values.itemsize
 #4.2.4 GRAFICO
-print(obtener_datos_serie())
+#print(obtener_datos_serie())
 #4.2.5
 def get_estadisticas():
+    print(data.describe())
     return data.describe()
 #4.2.6
 def sacar_frecuencia_y_val_unicos():
@@ -45,15 +47,16 @@ def sacar_frecuencia_y_val_unicos():
     for i in dic:
         if dic[i]==1:
             lista.append(i)
+    print(dic, lista)
     return dic, lista
 
 #4.2.8
 def reordenar_reset():
-    #print(data.sort_values(ascending=False).reset_index(drop=True))
+    print(data.sort_values(ascending=False).reset_index(drop=True))
     return data.sort_values(ascending=False).reset_index(drop=True)
 #4.2.9
 def get_df():
     dataej_42 = pd.DataFrame(data)
     dataej_42.columns=['Ej_42']
-    #print(dataej_42)
+    print(dataej_42)
     return dataej_42
