@@ -11,7 +11,8 @@ def listado(lista):
                 break
 
 
-listado([18, 50, 210, 80, 145, 333, 70, 30])
+def get_information21():
+    listado([18, 50, 210, 80, 145, 333, 70, 30])
 
 
 

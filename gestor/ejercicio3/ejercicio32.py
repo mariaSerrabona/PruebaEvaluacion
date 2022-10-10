@@ -2,8 +2,13 @@
 import numpy as np
 import random
 
-array_aleatorio=np.random.randint(1, 100, size=(3, 4))
-array = array_aleatorio[array_aleatorio % 9 == 0]
+lista = []
+for i in range(0,100):
+    if i % 9 == 0:
+        lista.append(i)
+n=4
+sep=[lista[i:i + n] for i in range(0, len(lista), n)]
+array = np.array(sep)
 print(array)
 
 # 3.2.2 Filtra todos los valores del vector creado en el paso anterior de la siguiente manera:
@@ -11,9 +16,22 @@ print(array)
 
 # En el caso contratio se sustituyen con el valor -1
 
-for i in array:
-    if array[i] > 0 & array[i] % 5 == 0:
-        print(array[i])
+for i in lista:
+    if i > 0 and i % 5 == 0:
+        print(i)
     else:
-        array[i] = -1
+        i = (-1)*i
+        print(i)
+
+
+def get_information_32():
+    print('Un array de tamaño (3x4) de todos los números enteros entre 0 y 100 que sean múltiplos de 9:')
+    print(array)
+
+    print('Si son valores positivos y múltiplos de 5 se conservan sin cambios:')
+    print(i)
+
+    print('En el caso contratio se sustituyen con el valor -1:')
+    print(-i)
+
 
