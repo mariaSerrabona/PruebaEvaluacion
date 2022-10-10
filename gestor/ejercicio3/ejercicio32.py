@@ -15,13 +15,13 @@ print(array)
 # Si son valores positivos y múltiplos de 5 se conservan sin cambios
 
 # En el caso contratio se sustituyen con el valor -1
-
-for i in lista:
-    if i > 0 and i % 5 == 0:
-        print(i)
-    else:
-        i = (-1)*i
-        print(i)
+def filtrado():
+    for i in lista:
+        if i > 0 and i % 5 == 0:
+            print(i)
+        else:
+            i = (-1)*i
+            print(i)
 
 
 def get_information_32():
@@ -29,9 +29,6 @@ def get_information_32():
     print(array)
 
     print('Si son valores positivos y múltiplos de 5 se conservan sin cambios:')
-    print(i)
-
     print('En el caso contratio se sustituyen con el valor -1:')
-    print(-i)
-
+    filtrado()
 
